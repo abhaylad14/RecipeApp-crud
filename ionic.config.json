@@ -1,0 +1,7 @@
+{
+  "name": "CiePractice",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
