@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/recipes"></ion-back-button>
+    </ion-buttons>
+    <ion-title>add-recipe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit()">
+    <ion-list>
+      <ion-item>
+        <ion-label color="primary" position="floating">Recipe ID</ion-label>
+        <ion-input placeholder="Enter recipe id" name="id" [(ngModel)]="id"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" position="floating">Recipe Name</ion-label>
+        <ion-input placeholder="Enter recipe name" name="title" [(ngModel)]="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" position="floating">Image Url</ion-label>
+        <ion-input placeholder="Enter image url" name="imageUrl" [(ngModel)]="imageUrl"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" position="floating">Ingredients</ion-label>
+        <ion-input placeholder="Enter recipe ingredients" name="ingredients" [(ngModel)]="ingredients"></ion-input>
+      </ion-item>
+    </ion-list>
+    <br>
+    <ion-button type="submit" expand="full">Add Recipe</ion-button>
+  </form>
+</ion-content>
